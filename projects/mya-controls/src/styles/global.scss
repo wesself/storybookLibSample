@@ -1,0 +1,253 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+/*=======Typography======*/
+$fontFamily-Geotab: 'Roboto';
+
+/*======Colors==========*/
+/**********************
+	   Brand
+***********************/
+$bnd-primary: #25477B;
+/**********************
+	   Backgrounds
+***********************/
+$bg-main: #FFFFFF;
+$bg-content-0: #F8F9FC;
+$bg-content-1: #EFF2F7;
+$bg-content-2: #D8DEE9;
+$bg-hover: #F4F6F8;
+$bg-formfield-disabled: #E9E9E9;
+$bg-reverse-1: #0B2032;
+$bg-reverse-2: #3C5063;
+$bg-reverse: #3C5063;
+$bg-reverse-brand: #25477B;
+$bg-overlay: rgba(46, 46, 46, 0.40);
+/**********************
+	   Text
+***********************/
+$txt-primary: #202328;
+$txt-secondary: #575757;
+$txt-placeholder: #757575;
+$txt-hyperlink: #0062A9;
+$txt-reverse-primary: #FFFFFF;
+$txt-reverse-secondary: #E7E7E7;
+/**********************
+	   Borders
+***********************/
+$bd-general: #C7CBD2;
+$bd-formfield-hover: #66788C;
+$bd-formfield-active: #0078D3;
+$bd-formfield-error: #DE3030;
+$bd-formfield-reverse: #7791BA;
+/**********************
+	   Actions
+***********************/
+$act-primary: #0078D3;
+$act-primary-hover: #25477B;
+$act-primary-active: #002D4F;
+$act-destructive: #DE3030;
+$act-destructive-hover: #9D1616;
+$act-destructive-active: #751111;
+$act-secondary: #66788C;
+$act-secondary-hover: #3C5063;
+$act-secondary-active: #282F36;
+/**********************
+	   Accents
+***********************/
+$acc-warning: #FFF2D2;
+$acc-warning-detail: #784600;
+$acc-error: #FDE5E5;
+$acc-error-detail: #751111;
+$acc-success: #E5FDE9;
+$acc-success-detail: #28600D;
+$acc-general: #E5F7FD;
+$acc-general-detail: #25477B;
+/**********************
+	   Charts
+***********************/
+$cht-seq-1: #0060CB;
+$cht-seq-2: #006DCA;
+$cht-seq-3: #0079C9;
+$cht-seq-4: #0084C8;
+$cht-seq-5: #0090C8;
+$cht-seq-6: #009CC7;
+$cht-seq-7: #00A7C6;
+$cht-seq-8: #00B3C5;
+$cht-seq-9: #00BEC4;
+$cht-seq-10: #00CAC4;
+$cht-seq-11: #40D69E;
+$cht-seq-12: #86DC74;
+$cht-seq-13: #B6E159;
+$cht-seq-14: #DCE442;
+$cht-seq-15: #FFE72E;
+$cht-div-1: #0066ED;
+$cht-div-2: #008BEC;
+$cht-div-3: #00B0EB;
+$cht-div-4: #00D4EB;
+$cht-div-5: #24E7D5;
+$cht-div-6: #6CE8AB;
+$cht-div-7: #B4E980;
+$cht-div-8: #FCEA56;
+$cht-div-9: #ECB25B;
+$cht-div-10: #DC7B5F;
+$cht-div-11: #CC4364;
+$cht-div-12: #B32665;
+$cht-div-13: #912362;
+$cht-div-14: #6F205E;
+$cht-div-15: #4D1D5B;
+
+// Productive
+@mixin label-01 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: .75rem !important;
+  line-height: 1rem !important;
+  font-weight: 400 !important;
+  letter-spacing: .32px !important;
+}
+
+@mixin caption-01 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: .75rem !important;
+  line-height: 1rem !important;
+  font-weight: 400 !important;
+  letter-spacing: .32px !important;
+}
+
+@mixin helper-text-01 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: .75rem !important;
+  line-height: 1rem !important;
+  font-weight: 400 !important;
+  letter-spacing: .32px !important;
+  font-style: italic !important;
+}
+
+// Body
+@mixin body-short-01 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: .857rem !important;
+  line-height: 1rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0px !important;
+}
+
+@mixin body-tall-01 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: .857rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0px !important;
+}
+
+@mixin body-02 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0px !important;
+}
+
+@mixin text-link {
+  cursor: pointer !important;
+  text-decoration: none !important;
+  color: $txt-hyperlink !important;
+}
+
+// Headings
+@mixin heading-00 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: .875rem !important;
+  line-height: 1rem !important;
+  font-weight: 300 !important;
+  letter-spacing: .16px !important;
+}
+
+@mixin heading-01 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: .875rem !important;
+  line-height: 1rem !important;
+  font-weight: 500 !important;
+  letter-spacing: .16px !important;
+}
+
+@mixin heading-02 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0px !important;
+}
+
+@mixin heading-03 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: 1.25rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0px !important;
+}
+
+@mixin productive-heading-04 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 0px !important;
+}
+
+@mixin productive-heading-mobile-04 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: 1.125rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 0px !important;
+}
+
+@mixin productive-heading-05 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: 1.75rem !important;
+  line-height: 2.25rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 0px !important;
+}
+
+@mixin productive-heading-mobile-05 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 0px !important;
+}
+
+@mixin productive-heading-06 {
+  font-family: $fontFamily-Geotab !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0px !important;
+  text-transform: uppercase !important;
+}
+
+// Data
+@mixin data-lg {
+  font-family: $fontFamily-Geotab !important;
+  font-size: 2rem !important;
+  line-height: 2.5rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0px !important;
+}
+
+@mixin data-md {
+  font-family: $fontFamily-Geotab !important;
+  font-size: 1.25rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0px !important;
+}
+
+@mixin data-sm {
+  font-family: $fontFamily-Geotab !important;
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0px !important;
+}

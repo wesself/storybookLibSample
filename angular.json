@@ -1,0 +1,59 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "mya-controls": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/mya-controls",
+      "sourceRoot": "projects/mya-controls/src",
+      "prefix": "mya",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/mya-controls/ng-package.json",
+            "tsConfig": "projects/mya-controls/tsconfig.lib.prod.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mya-controls/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/mya-controls/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "codeCoverage": true,
+            "main": "projects/mya-controls/src/test.ts",
+            "tsConfig": "projects/mya-controls/tsconfig.spec.json",
+            "karmaConfig": "projects/mya-controls/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/mya-controls/**/*.ts",
+              "projects/mya-controls/**/*.html"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "mya-controls",
+  "cli": {
+    "analytics": false,
+    "defaultCollection": "@angular-eslint/schematics"
+  }
+}

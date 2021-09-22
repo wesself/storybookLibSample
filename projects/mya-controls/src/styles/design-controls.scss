@@ -1,0 +1,12 @@
+@import "global";
+
+// Button
+.btn  {
+  @include caption-01;
+  background: $act-primary;
+  height: 40px;
+  width: 89px;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px;
+}
