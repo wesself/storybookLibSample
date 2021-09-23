@@ -1,0 +1,31 @@
+{
+  "root": true,
+  "ignorePatterns": ["projects/**/*"],
+  "plugins": [],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["tsconfig.json"],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:@angular-eslint/all"
+      ],
+      "rules": {
+        "@angular-eslint/sort-ngmodule-metadata-arrays": "off",
+        "complexity": ["error", { "max": 30 }]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/all"],
+      "rules": {
+        "@angular-eslint/template/i18n": "off",
+        "@angular-eslint/template/cyclomatic-complexity" : "off",
+        "@angular-eslint/template/click-events-have-key-events" : "off"
+      }
+    }
+  ]
+}
